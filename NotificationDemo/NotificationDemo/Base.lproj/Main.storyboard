@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NotificationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="E7h-gH-Iox">
+                                <rect key="frame" x="150.5" y="104" width="113" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeS-Ul-hCS">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                        <state key="normal" title="10 seconds later"/>
+                                        <connections>
+                                            <action selector="tenSecondsNoti:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZP4-oY-udh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrY-3t-1HY">
+                                        <rect key="frame" x="7" y="70" width="99" height="30"/>
+                                        <state key="normal" title="Two days later"/>
+                                        <connections>
+                                            <action selector="twoDaysNoti:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FyK-iB-ubo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFf-xv-dtN">
+                                        <rect key="frame" x="3.5" y="140" width="106" height="30"/>
+                                        <state key="normal" title="Refresh Picture"/>
+                                        <connections>
+                                            <action selector="refreshPicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ovn-gN-YwY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Exi-Nx-2hd">
+                                <rect key="frame" x="87" y="314.5" width="240" height="238"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="CdZ-zD-43w"/>
+                                    <constraint firstAttribute="width" secondItem="Exi-Nx-2hd" secondAttribute="height" multiplier="1:1" id="bsi-zK-kEA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-Fs-H7t">
+                                <rect key="frame" x="186" y="574" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="E7h-gH-Iox" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Hku-Uf-Nfm"/>
+                            <constraint firstItem="E7h-gH-Iox" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="I3F-KH-MmT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Exi-Nx-2hd" secondAttribute="bottom" constant="30" id="IJb-e9-PCQ"/>
+                            <constraint firstItem="Vfz-Fs-H7t" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="K90-XZ-RSs"/>
+                            <constraint firstItem="Exi-Nx-2hd" firstAttribute="top" secondItem="E7h-gH-Iox" secondAttribute="bottom" constant="40" id="ORg-mx-ean"/>
+                            <constraint firstItem="Exi-Nx-2hd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.57971" id="XXj-cO-mYr"/>
+                            <constraint firstItem="E7h-gH-Iox" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="iPs-T7-e9H"/>
+                            <constraint firstItem="Exi-Nx-2hd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kG8-Mk-8wl"/>
+                            <constraint firstItem="Vfz-Fs-H7t" firstAttribute="top" secondItem="Exi-Nx-2hd" secondAttribute="bottom" constant="20" id="wcN-Sa-sGL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="Vfz-Fs-H7t" id="gJw-Kd-F8D"/>
+                        <outlet property="mainPicture" destination="Exi-Nx-2hd" id="nUs-gZ-FZ3"/>
+                        <outlet property="tenSecondsNotiButton" destination="aeS-Ul-hCS" id="gSq-Y1-YZT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder.badge.plus" catalog="system" width="64" height="42"/>
+    </resources>
+</document>
