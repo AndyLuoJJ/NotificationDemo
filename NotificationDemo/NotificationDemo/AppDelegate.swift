@@ -88,9 +88,6 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         willPresent notification: UNNotification,
         withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         // New in iOS 10, we can show notifications when app is in foreground, by calling completion handler with our desired presentation type.
-        if notification.request.identifier == LocalNotificationRequestIdentifiers.fiveSeconds, let timer = notification.request.content.userInfo["timer"] as? Timer {
-            print("Get timer")
-        }
         
         completionHandler(.alert)
     }

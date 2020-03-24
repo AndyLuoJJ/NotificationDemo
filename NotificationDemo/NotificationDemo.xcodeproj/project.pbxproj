@@ -14,7 +14,6 @@
 		E6FAA843242A132A009822D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6FAA842242A132A009822D0 /* Assets.xcassets */; };
 		E6FAA846242A132A009822D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FAA844242A132A009822D0 /* LaunchScreen.storyboard */; };
 		E6FAA84E242A1CD8009822D0 /* NotificationLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAA84D242A1CD8009822D0 /* NotificationLiteral.swift */; };
-		E6FAA850242A4C1E009822D0 /* ImageRefreshObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAA84F242A4C1E009822D0 /* ImageRefreshObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		E6FAA845242A132A009822D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6FAA847242A132A009822D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6FAA84D242A1CD8009822D0 /* NotificationLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLiteral.swift; sourceTree = "<group>"; };
-		E6FAA84F242A4C1E009822D0 /* ImageRefreshObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRefreshObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 				E6FAA839242A1329009822D0 /* AppDelegate.swift */,
 				E6FAA84D242A1CD8009822D0 /* NotificationLiteral.swift */,
 				E6FAA83B242A1329009822D0 /* SceneDelegate.swift */,
-				E6FAA84F242A4C1E009822D0 /* ImageRefreshObserver.swift */,
 				E6FAA83D242A1329009822D0 /* ViewController.swift */,
 				E6FAA83F242A1329009822D0 /* Main.storyboard */,
 				E6FAA842242A132A009822D0 /* Assets.xcassets */,
@@ -147,7 +144,6 @@
 				E6FAA84E242A1CD8009822D0 /* NotificationLiteral.swift in Sources */,
 				E6FAA83E242A1329009822D0 /* ViewController.swift in Sources */,
 				E6FAA83A242A1329009822D0 /* AppDelegate.swift in Sources */,
-				E6FAA850242A4C1E009822D0 /* ImageRefreshObserver.swift in Sources */,
 				E6FAA83C242A1329009822D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
